@@ -73,6 +73,7 @@ def user_login(request):
 @login_required
 def user_logout(request):
     logout(request)
+    print('you are now logged out. Thank you for visiting this page')
     return redirect('user_login')
 
 def landing(request):
