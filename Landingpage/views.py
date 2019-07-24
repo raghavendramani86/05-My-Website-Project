@@ -62,7 +62,7 @@ def user_login(request):
                 print('success',value)
                 return redirect('landing')
             else:
-                print('hi')
+                print('hi, the credentials are invalid')
                 return HttpResponse('Invalid')
         else:
             print('Invalid Credentials')
